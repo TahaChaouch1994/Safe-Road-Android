@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projetandroidbinome.Settings"
+    android:background="@drawable/backgrounfacceuil">
+
+
+
+<EditText
+    android:id="@+id/ancienmdp"
+    android:layout_width="350dp"
+    android:layout_height="64dp"
+    android:background="@drawable/editpassword"
+    android:gravity="center"
+    android:hint="current password"
+    android:textColorHint="@color/colorWhite"
+    android:textColor="@color/colorWhite"
+    android:textStyle="bold"
+    android:inputType="textPassword"
+    app:layout_constraintBottom_toTopOf="@+id/newmdpp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.622" />
+
+<EditText
+    android:id="@+id/newmdpp"
+    android:layout_width="350dp"
+    android:layout_height="64dp"
+
+    android:background="@drawable/editpassword"
+    android:gravity="center"
+    android:hint="new password"
+    android:inputType="textPassword"
+    android:textColorHint="@color/colorWhite"
+    android:textColor="@color/colorWhite"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/ancienmdp"
+    app:layout_constraintBottom_toTopOf="@+id/repeatmdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.508"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<EditText
+    android:id="@+id/repeatmdp"
+    android:layout_width="350dp"
+    android:layout_height="64dp"
+    android:background="@drawable/editpassword"
+    android:gravity="center"
+    android:hint="repeat password"
+    android:textColorHint="@color/colorWhite"
+    android:textColor="@color/colorWhite"
+    android:textStyle="bold"
+    android:inputType="textPassword"
+    app:layout_constraintTop_toBottomOf="@id/newmdpp"
+    app:layout_constraintBottom_toTopOf="@+id/savemdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.508"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/savemdp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sigin"
+        android:text="save changes "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repeatmdp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

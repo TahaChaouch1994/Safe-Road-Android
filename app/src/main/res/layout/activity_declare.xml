@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Declare"
+    android:background="@drawable/backgrounfacceuil">
+
+
+
+
+    <EditText
+        android:id="@+id/titledeclare"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/descriptiondeclare"
+        android:background="@drawable/yea"
+        android:hint="@string/title"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/descriptiondeclare"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titledeclare"
+        app:layout_constraintBottom_toTopOf="@id/imei"
+        android:background="@drawable/yea2"
+        android:hint="@string/description"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/imei"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptiondeclare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/yea"
+        android:hint="@string/imei_of_stolen_equipment"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center"
+        tools:ignore="LabelFor"
+        app:layout_constraintHorizontal_bias="0.8"
+        android:layout_marginBottom="120dp"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptiondeclare"
+        app:layout_constraintRight_toLeftOf="@id/imei"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="120dp"
+        />
+
+
+    <Button
+        android:id="@+id/googlemapbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/googlemap"
+        app:layout_constraintBottom_toTopOf="@id/validatedeclare"
+        app:layout_constraintTop_toBottomOf="@id/imei"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/validatedeclare"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/googlemapbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/smallbuttonwhite"
+        android:hint="@string/validate"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center" />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projetandroidbinome.NextSignUp"
+    android:background="@drawable/background">
+
+
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintBottom_toTopOf="@id/lastname"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rectangle"
+        android:hint="@string/first_name"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center"
+
+
+        />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintBottom_toTopOf="@id/emailnumber"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstname"
+        android:background="@drawable/rectangle"
+        android:hint="@string/last_name"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center"
+
+        />
+    <EditText
+        android:id="@+id/emailnumber"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:cursorVisible="false"
+        app:layout_constraintBottom_toTopOf="@id/radioGrp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastname"
+        android:background="@drawable/rectangle"
+        android:hint="@string/email_or_phone_number"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="center"
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/emailnumber"
+        app:layout_constraintBottom_toTopOf="@id/show_dialog"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:checked="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="Male"
+            android:buttonTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            />
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:checked="false"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="Female"
+            android:buttonTint="@color/colorWhite"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/calendar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/date_text"
+        app:layout_constraintBottom_toTopOf="@id/finish"
+        app:layout_constraintTop_toBottomOf="@id/radioGrp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toRightOf="@id/show_dialog"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGrp"
+        app:layout_constraintBottom_toTopOf="@id/finish"
+        app:layout_constraintHorizontal_bias="0.8"
+        />
+
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:background="@drawable/sigin"
+        android:fontFamily="casual"
+        android:text="Finish"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_dialog"
+        android:textColor="@color/colorBlack"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
